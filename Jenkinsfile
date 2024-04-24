@@ -8,3 +8,9 @@ pipeline {
     }
   }
 }
+
+stage ("git clone") {
+      steps {
+        git repo url
+      }
+    }
